@@ -18,7 +18,7 @@ class TreeInversion:
             self.invertTree(root.left)
         return root
 
-    def printTree(self, root): #helper method to print tree in order
+    def printTree(self, root):  # helper method to print tree in order
         if root is None:
             return
         self.printTree(root.left)
@@ -27,8 +27,8 @@ class TreeInversion:
 
 
 if __name__ == "__main__":
-    a = TreeNode(2, TreeNode(3), TreeNode(4))
-    b = TreeNode(8, TreeNode(5), TreeNode(6))
+    a = TreeNode(2, TreeNode(3), TreeNode(4))  # create left subtree
+    b = TreeNode(8, TreeNode(5), TreeNode(6)) # create right subtree
     rootNode = TreeNode(1, a, b)
     helper = TreeInversion()
     helper.printTree(rootNode)
