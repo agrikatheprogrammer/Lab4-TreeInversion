@@ -15,7 +15,7 @@ import java.util.Queue;
             invertTree(root.left); // and left child
         }
         return root; // all calls return null as recursion goes on until
-        // all non-null roots are swapped
+        // all non-null roots' children are swapped
     }
 
     }
